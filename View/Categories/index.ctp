@@ -1,4 +1,4 @@
-<div class="questions index">
+<section class="instructies">
 	<h2><?php echo __('FAQ');?></h2>
 	<?php foreach ($categories as $category): ?>
 	<h3><?php echo $category['Category']['title'];?></h3>
@@ -7,7 +7,7 @@
 			<p><?php echo nl2br($this->Text->autoLink($question['answer']));?></p>
 		<?php endforeach; ?>
 	<?php endforeach; ?>
-</div>
+</section>
 <section class="faq">
 	<h2><?php echo __('FAQ');?></h2>
 	<?php foreach ($categories as $category): ?>
