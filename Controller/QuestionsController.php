@@ -7,6 +7,17 @@ App::uses('FaqAppController', 'Faq.Controller');
  */
 class QuestionsController extends FaqAppController {
 
+	/**
+	 * beforeFilter
+	 *
+	 * Application hook which runs prior to each controller action
+	 *
+	 * @access public
+	 */
+	function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(array('index'));
+	}
 
 /**
  * admin_index method
