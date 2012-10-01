@@ -8,20 +8,4 @@
 		<?php endforeach; ?>
 	<?php endforeach; ?>
 </section>
-<section class="faq">
-	<h2><?php echo __('FAQ');?></h2>
-	<?php foreach ($categories as $category): ?>
-	<h3><?php echo $category['Category']['title'];?></h3>
-	<ul>
-		<?php foreach ($category['Question'] as $question): ?>
-		<li><?php echo $this->Html->link($question['question'], array(
-				'plugin' => 'faq',
-				'controller' => 'questions',
-				'action' => 'index',
-				'#' => $question['slug']
-			)); ?>
-		</li>
-		<?php endforeach; ?>
-	</ul>
-	<?php endforeach; ?>
-</section>
+<?php echo $this->element('Faq.faq');?>
