@@ -9,7 +9,7 @@
 		<h3><?php echo $category['Category']['title'];?></h3>
 		<ul>
 			<?php foreach ($category['Question'] as $question): ?>
-				<li><?php echo $this->Html->link($question['question'], array(
+				<li><span class="icon chevron-right-black"></span><?php echo $this->Html->link($question['question'], array(
 					'plugin' => 'faq',
 					'controller' => 'categories',
 					'action' => 'index',
