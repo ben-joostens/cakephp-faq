@@ -11,5 +11,3 @@
 	<?php endforeach; ?>
 </section>
 <?php echo $this->element('Faq.faq');?>
-
-<script type="text/javascript"
